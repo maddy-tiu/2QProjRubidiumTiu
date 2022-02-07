@@ -11,19 +11,30 @@
 body {
     font-size: 20px;
     line-height: 1.5;
-    color: white;
+    color: #FFFDF4;
 }
 
 #page2 {
-    background-color: rgb(0, 0, 32);
+    background-color: #FFFDF4;
     margin-left: 30px;
     margin-right: 30px;
+    position: absolute;
+    color: #000004;
 }
 
 #page3 {
-    background-color: rgb(0, 0, 32);
+    background-color: #FFFDF4;
     margin-left: 30px;
     margin-right: 30px;
+    color: #000004;
+}
+
+#page4 {
+    background-color: #FFFDF4;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #000004;
+    display: grid;
 }
 
 #home {
@@ -44,32 +55,63 @@ body {
 }
 
 .navi_home {
-    color: white;
+    color: #FFFDF4;
     text-decoration: none;
     padding: 10px 10px;
-    border: solid white 1px;
+    border: solid #FFFDF4 1px;
     border-radius: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-a:hover {
+.navi_source {
+    color: #AF1B3F;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: solid #AF1B3F 1px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: #065A82;
+}
+
+a.link:hover {
+    color: #AF1B3F;
+}
+
+a.navi_home:hover {
+    color: #AF1B3F;
+    background-color: #FFFDF4;
+}
+
+a.navi_page:hover {
     color: black;
-    background-color: white;
+    background-color: #AF1B3F;
+}
+
+a.navi_source:hover {
+    color: black;
+    background-color: #AF1B3F;
 }
 
 .sources {
-    background-color: rgb(0, 0, 32);
-    color: white;
+    background-color: #FFFDF4;
+    color:  #AF1B3F;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .navi_page {
-    color: white;
+    color:  #AF1B3F;
     padding: 10px 10px;
-    border: solid white 1px;
+    border: solid  #AF1B3F 1px;
     border-radius: 30px;
     margin-top: 20px;
     float: right;
@@ -81,12 +123,13 @@ a:hover {
     float: left;
     margin-top: 15px;
     margin-bottom: 15px;
-    color: rgb(189, 0, 0);
+    color: #AF1B3F;
 }
 
 .text {
     margin: 25px 0px;
     display: inline-block;
+
 }
 
 .container {
@@ -101,11 +144,12 @@ a:hover {
     width: 30vw;
     padding: 15px;
     object-fit: cover;
+    transition: 0.6s;
 }
 
 .endnote {
     font-size: 20px;
-    color: rgb(189, 0, 0);
+    color: #AF1B3F;
     text-align: center;
     margin: 30px 0px 50px 0px;
 }
@@ -119,6 +163,62 @@ a:hover {
 figcaption {
     font-size: 10px;
     text-align: center;
+}
+
+.container a:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.6))
+}
+
+.fb {
+    position: absolute;
+    right: 10px;
+    background: url(../images/sprites.png) no-repeat -47px -6px;
+    background-position: -5px -39px;
+    width: 39px;
+    height: 38px;
+}
+
+.twt {
+    position: absolute;
+    right: 40px;
+    background: url(../images/sprites.png) no-repeat -47px -6px;
+    background-position: -41px -38px;
+    width: 39px;
+    height: 38px;
+}
+
+.ig {
+    position: absolute;
+    right: 70px;
+    background: url(../images/sprites.png) no-repeat -47px -6px;
+    background-position: -75px -39px;
+    width: 39px;
+    height: 38px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: none;
+}
+
+.contentpic2 {
+    height: 66vh;
+    width: 51vw;
+    padding: 0px;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.contentpic2:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.6));
+}
+
+.endnote:hover {
+    color: #065A82;
+    transition: 0.6s;
 }
 
 
